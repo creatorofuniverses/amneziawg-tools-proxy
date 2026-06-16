@@ -1,5 +1,20 @@
 # [wireguard-tools](https://git.zx2c4.com/wireguard-tools/about/) &mdash; tools for configuring [WireGuard](https://www.wireguard.com/)
 
+> **Fork notice.** This is a fork of
+> [AmneziaWG `amneziawg-tools`](https://github.com/amnezia-vpn/amneziawg-tools)
+> &mdash; itself a fork of WireGuard's
+> [`wireguard-tools`](https://git.zx2c4.com/wireguard-tools/about/) by Jason A.
+> Donenfeld, extended by the [Amnezia VPN](https://amnezia.org/) project. All
+> credit for the original tooling and the AmneziaWG obfuscation work belongs to
+> them.
+>
+> The goal of this fork is to expose the additional device-level parameters
+> introduced in the companion fork
+> [`amneziawg-go-proxy`](https://github.com/creatorofuniverses/amneziawg-go-proxy)
+> (e.g. `ImitateProtocol`) as native configuration keys, so they can be used
+> through `awg`/`awg-quick` without manual UAPI socket writes. See the
+> [AmneziaWG](#amneziawg) section below.
+
 This supplies the main userspace tooling for using and configuring WireGuard
 tunnels, including the
 [`awg(8)`](https://git.zx2c4.com/wireguard-tools/about/src/man/wg.8) and
